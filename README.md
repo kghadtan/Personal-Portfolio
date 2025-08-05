@@ -3,7 +3,7 @@ A simple personal website created with HTML, CSS, and JavaScript to highlight my
 
 ## About
 
-This website is built with HTML, CSS, and a little bit of JavaScript. It serves as a platform to present my work, experiences, and contact information.
+This website is built with HTML, CSS, and a little bit of JavaScript. It serves as a platform to present my work, experiences, and contact information. The exact styling — including margins and layout adjustments — was first tested using the browser’s Inspect tool to visually test and apply changes in real-time.
 
 ## Features
 
