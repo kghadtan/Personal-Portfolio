@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); /* Importing Google font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap'); /* Importing Google font Source Code Pro */
+*{ /* * targets all elements on the page, reset code */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgba(218, 212, 212, 0.91);
+    font-family: 'Fira Sans', sans-serif; /* Applying imported font */
+    height: 100vh; /* Full height of the viewport */
+    transition: transform 0.3s ease-in; /* Smooth transition for sidebar movement */
+}
+
+.sidebar nav {
+    padding: 45px; /* Removes padding from the list */
+}
+
+/* padding: top right bottom left; top: space at the top, right: space on the right, bottom: space at bottom, left: space on left */
+.sidebar nav li {
+    list-style: none; /* Removes bullet points from the list */
+    font-size: 30px;
+    padding: 33px 0; /* Removes padding from the list */
+}
+
+.sidebar nav li a{ /* a means the anchor tags */
+    text-decoration: none; /* Removes underline from links */
+    color: black;
+}
+
+.main {
+    width: 90vw;
+}
+
+.container {
+    display: flex; /* Flexbox layout for sidebar and main content */
+}
+
+.infoC {
+    background-color:rgb(209, 187, 209);
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around; /* Space between items */
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center; /* Center items horizontally */;
+    flex-direction: column; /* Stack items vertically */
+    font-family: 'Source Code Pro', monospace; /* Applying a different font for the hello text */
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold; /* Makes the name bold */
+    font-family: 'Fira Sans', sans-serif; /* Applying imported font */
+}
+
+.about{
+     font-size: 40px;
+}
+
+.more {
+    font-size: 30px;
+    margin-top: 23px;
+    font-family: 'Fira Sans', sans-serif; /* Applying imported font */
+}
+
+.buttons {
+    margin-top: 34px; /* Adds space above the buttons */
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px; /* Makes the button corners rounded */
+    color: white;
+    background-color: dodgerblue; /* Green background color */
+    font-weight: bold;
+    font-size: 21px; /* Increases the font size of the button text */
+    margin: 0 3px; /* Adds space between buttons */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: white; /* Changes the background color on hover */
+    color: dodgerblue
+}
+
+.devPic img {
+    height: 58vh; /* Sets the height of the image */
+}
+
+.contactform{
+    padding: 0 34px; /* Adds padding to the left and right of the contact form */
+    padding-top: 144px; /* Adds space at the top of the contact form */
+    font-family: 'Fira Sans', sans-serif; /* Applying imported font */
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace; /* Applying a different font for the hello text */
+    padding: 12px 0;
+}
+
+.contactform form div{ /* inside contactform form div, make the following changes */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column; /* Stacks the label and input vertically */
+}
+
+.contactform form div input{ /*means: all <input> elements that are inside a <div>, which is inside a <form>, which is inside an element with the class contactform. */
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0; /* Adds space above the input field */
+    padding: 3px;
+}
+
+#emailHelp { /* #email help used when i have an id in the html */
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px; /* Adds space on the left and right of the text */
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row; /* Aligns the checkbox and label horizontally */
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+h1{ 
+    font-family: 'Fira Sans', sans-serif; 
+    margin: 23px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace; 
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif; 
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace; 
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillItem{
+    display:flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.fifty{
+    width:125px;
+    background-color:green;
+}
+
+.twentyfive{
+    width: 75px;
+    background-color: blue;
+}
+
+.fifteen{
+    width: 40px;
+    background-attachment: yellow;
+}
+
+.eighty{
+    width: 200px;
+    background-color: orange;
+}
+
+.sixty{
+    width: 150px;
+    background-color: purple;
+}
+
+.sidebarGo{ /* Class to hide the sidebar */
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+
+.hamburger{
+    position: absolute; /* Keeps the hamburger menu in the same position as the sidebar */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the hamburger menu */
+    top:10px; /* Positions the hamburger menu at the top */
+    left: 10px; /* Positions the hamburger menu on the left */
+}
+
+.ham{
+    margin-top:10px;
+}
+
+.cross{
+    margin-left:185px;
+    margin-top:10px;
+}
+
+
+@media (max-width: 1615px) { /* Media query for responsive design */
+    *{
+        /*background-color: rgb(155, 94, 94);*/
+    }
+    /*.sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }*/
+}
