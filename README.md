@@ -19,7 +19,7 @@ This website is built with HTML, CSS, and a little bit of JavaScript. It serves 
 
 ## How to View
 
-You can view the live website by opening the `index.html` file in your browser or by visiting the GitHub Pages link (if enabled).
+You can view the live website by opening the `index.html` file in your browser
 
 ## Screenshot 
 
